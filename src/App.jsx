@@ -2,18 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+
+// Internal assets
 import './App.css'
+import Hero from "./components/Hero";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <h1>Vektor Website</h1>
-        </div>
-      </section>
+    <Hero />
     </>
   )
 }
