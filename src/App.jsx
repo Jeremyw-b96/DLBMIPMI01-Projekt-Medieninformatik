@@ -15,6 +15,10 @@ function App() {
     <Hero />
     <Mission />
     <Team />
+    <Services />
+    <Timeline />
+    <Connect />
+    <Footer />
     </>
   )
 }
