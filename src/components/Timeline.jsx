@@ -1,37 +1,121 @@
-   
+import TimelineItem from './TimelineItem';
+
+const timelineEvents = [
+  {
+    year: "2020",
+    title: "Die Gründung",
+    description:
+      "Dr. Daniel Weber, Julia Beer und Jonas Roth gründen VEKTOR mit dem Ziel, den Mittelstand fit für die Zukunft der Künstlichen Intelligenz zu machen.",
+    media: [
+      { type: "image", title: "Gründerfoto" },
+      { type: "video", title: "Interview mit den Gründern" },
+      { type: "image", title: "Whiteboard-Entwurf" }
+    ],
+    links: [
+      { label: "KI-Grundlagen (Paper)", url: "https://arxiv.org" }
+    ]
+  },
+  {
+    year: "2021",
+    title: "Erstes Büro & erstes Kundenprojekt",
+    description:
+      "VEKTOR bezieht ein Büro in München-Haidhausen und realisiert das erste NLP-Projekt für einen Handwerksbetrieb.",
+    media: [
+      { type: "image", title: "Gründerfoto" },
+      { type: "video", title: "Interview mit den Gründern" },
+      { type: "image", title: "Whiteboard-Entwurf" }
+    ],
+    links: [
+      { label: "KI-Grundlagen (Paper)", url: "https://arxiv.org" }
+    ]
+  },
+  {
+    year: "2022",
+    title: "Wachstum & erste Workshops",
+    description:
+      "Das Team wächst auf zehn Mitarbeitende und startet gemeinsam mit der IHK Workshops zu KI und Datenschutz.",
+    media: [
+      { type: "image", title: "Gründerfoto" },
+      { type: "video", title: "Interview mit den Gründern" },
+      { type: "image", title: "Whiteboard-Entwurf" }
+    ],
+    links: [
+      { label: "KI-Grundlagen (Paper)", url: "https://arxiv.org" }
+    ]
+  },
+  {
+    year: "2023",
+    title: "Pilotprojekte & erste Partnerschaften",
+    description:
+      "VEKTOR entwickelt das Beratungsmodell „KI klar & konkret“, das Unternehmen Schritt für Schritt von der Idee bis zur Umsetzung begleitet.Parallel startet die Produktion einer Kurzfilmreihe über reale KI-Anwendungsfälle.",
+    media: [
+      { type: "image", title: "Gründerfoto" },
+      { type: "video", title: "Interview mit den Gründern" },
+      { type: "image", title: "Whiteboard-Entwurf" }
+    ],
+    links: [
+      { label: "KI-Grundlagen (Paper)", url: "https://arxiv.org" }
+    ]
+  },
+  {
+    year: "2024",
+    title: "Expansion & Netzwerk für Digitale Transformation",
+    description:
+      "VEKTOR vergrößert sich räumlich und arbeitet erstmals mit überregionalen IT-Systemhäusern zusammen. Die Firma nimmt an der Digitalmesse Bayern teil, wo sie live eine KI-gestützte Datenanalyse vorführt.",
+    media: [
+      { type: "image", title: "Gründerfoto" },
+      { type: "video", title: "Interview mit den Gründern" },
+      { type: "image", title: "Whiteboard-Entwurf" }
+    ],
+    links: [
+      { label: "KI-Grundlagen (Paper)", url: "https://arxiv.org" }
+    ]
+  },
+  {
+    year: "2025",
+    title: "Weiterbildung & neue Services",
+    description:
+      "Das Unternehmen startet ein internes Trainingsprogramm für ethische KI-Entwicklung, besonders für generative Systeme. Außerdem wird der Servicebereich um generative Text- und Bild-KI erweitert.",
+    media: [
+      { type: "image", title: "Gründerfoto" },
+      { type: "video", title: "Interview mit den Gründern" },
+      { type: "image", title: "Whiteboard-Entwurf" }
+    ],
+    links: [
+      { label: "KI-Grundlagen (Paper)", url: "https://arxiv.org" }
+    ]
+  }
+];
+
 function Timeline() {
     return (
-    <section id="timeline" className="min-h-screen bg-gray-200">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <h2>Unsere Geschichte</h2>
-            <div>
-                <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
-                    <li className="mb-10 ms-4">
-                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-                        <a href="#" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg className="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg></a>
-                    </li>
-                    <li className="mb-10 ms-4">
-                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-                        <p className="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-                    </li>
-                    <li className="ms-4">
-                        <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-                        <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-                    </li>
-                </ol>
-            </div>
+    <section id="timeline" className="bg-white py-20">
+      <div className="mx-auto max-w-screen-xl px-6 lg:px-8">
+        <div className="mb-16 text-center">
+          <h2 className="text-4xl font-extrabold text-gray-900">
+            Unsere Entwicklung
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            Die wichtigsten Meilensteine von VEKTOR auf dem Weg zu einem
+            modernen KI-Beratungsunternehmen.
+          </p>
         </div>
+
+        <div className="space-y-8">
+          {timelineEvents.map((event) => (
+            <TimelineItem
+              key={event.year}
+              year={event.year}
+              title={event.title}
+              description={event.description}
+              media={event.media}
+              links={event.links}
+            />
+          ))}
+        </div>
+      </div>
     </section>
-    );
+  );
 }
 
 export default Timeline

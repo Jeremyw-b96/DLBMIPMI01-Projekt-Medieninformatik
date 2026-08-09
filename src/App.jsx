@@ -15,8 +15,8 @@ function App() {
     <Navbar />
     <Hero />
     <Mission />
-    <Team />
     <Services />
+    <Team />
     <Timeline />
     <Connect />
     <Footer />
