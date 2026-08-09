@@ -1,7 +1,7 @@
    
 function Timeline() {
     return (
-    <section id="timeline-start" className="min-h-screen bg-gray-200">
+    <section id="timeline" className="min-h-screen bg-gray-200">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <h2>Unsere Geschichte</h2>
             <div>
