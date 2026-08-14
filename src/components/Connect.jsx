@@ -1,11 +1,76 @@
-    
+import MediaItem from "./MediaItem";
+import { motion } from "motion/react";
+
+const mediaItems = [
+  {
+    type: "video",
+    title: "Gründerinterview",
+    subtitle: "Warum VEKTOR entstanden ist",
+    thumbnail: null,
+    url: "https://www.youtube.com/..."
+  },
+  {
+    type: "audio",
+    title: "Podcast: KI im Mittelstand",
+    subtitle: "20 Minuten Audio-Interview",
+    thumbnail: null,
+    url: "https://www.example.com/podcast"
+  },
+  {
+    type: "image",
+    title: "Bilderserie Digitalmesse Bayern",
+    subtitle: "Einblicke in unsere Projekte",
+    thumbnail: null
+  },
+  {
+    type: "paper",
+    title: "Whitepaper: Responsible AI",
+    subtitle: "PDF-Download",
+    thumbnail: null,
+    url: "/papers/responsible-ai.pdf"
+  }
+];
+
 function Connect() {
-    return (
-    <section id="Pod" className="min-h-screen bg-gray-200">
-        <h2>Höre doch mal in unseren Podcast rein!</h2>
-        <p>Weitere multimediale Inhalte folgen...</p>
+  return (
+    <section id="connect" className="bg-gray-100 py-20">
+      <div className="mx-auto max-w-screen-xl px-6 lg:px-8">
+        <div className="mx-auto mb-14 max-w-3xl text-center">
+          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900">
+            Connect
+          </h2>
+          <p className="text-lg text-gray-600">
+            Entdecken Sie Interviews, Podcasts, Bilderserien und weiterführende
+            Fachquellen rund um VEKTOR, Künstliche Intelligenz und digitale
+            Transformation.
+          </p>
+        </div>
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden">
+          {mediaItems.map((item) => (
+            <div key={item.title} className="snap-start">
+              <MediaItem
+                type={item.type}
+                title={item.title}
+                subtitle={item.subtitle}
+                thumbnail={item.thumbnail}
+                url={item.url}/>
+            </div>
+          ))}
+        </motion.div>
+        <div className="mt-10 text-center">
+          <p className="text-sm text-gray-500">
+            Weitere Inhalte werden fortlaufend ergänzt. Klicken Sie auf eine
+            Kachel, um Details, Videos oder Dokumente zu öffnen.
+          </p>
+        </div>
+      </div>
     </section>
-    );
+  );
 }
 
 export default Connect

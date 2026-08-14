@@ -2,9 +2,10 @@ import logo from "../assets/images/vektor_logo_embedded.svg";
 
 const navItems = [
     { label: "Mission", href: "#werte" },
+    { label: "Leistungen", href: "#services" },
     { label: "Team", href: "#team" },
     { label: "Zeitleiste", href: "#timeline" },
-    { label: "Leistungen", href: "#services" }
+    { label: "Connect", href: "#connect" }
 ];
 
 function Navbar() {

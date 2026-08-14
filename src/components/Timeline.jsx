@@ -82,7 +82,7 @@ const timelineEvents = [
       { type: "image", title: "Whiteboard-Entwurf" }
     ],
     links: [
-      { label: "KI-Grundlagen (Paper)", url: "https://arxiv.org" }
+      {label: "KI-Grundlagen (Paper)", url: "https://arxiv.org" }
     ]
   }
 ];
