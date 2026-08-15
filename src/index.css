@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --color-vektor-dark: #161925;
+  --color-vektor-navy: #23395b;
+  --color-vektor-primary: #406e8e;
+  --color-vektor-muted: #8ea8c3;
+  --color-vektor-accent: #cbf7ed;
+}
+
 body {
-  background: grey;
+  background: var(--color-vektor-dark);
 }
