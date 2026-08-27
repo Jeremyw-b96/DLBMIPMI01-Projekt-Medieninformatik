@@ -12,7 +12,7 @@ const services = [
     description: "Entwicklung und Integration von Machine-Learning-Lösungen, Automatisierung von Geschäftsprozessen, Datenanalyse und -infrastruktur."
   },
   {
-    title: "Regulatorische Transparenz",
+    title: "Regulatorische Aufklärung",
     short: "Gesetzeskonforme KI-Einführung",
     description: "DSGVO-konforme Umsetzung von KI-Systemen, datenschutzrechtliche Risikoanalysen, rechtliche Begleitung von KI-Projekten."
   }
@@ -20,7 +20,7 @@ const services = [
 
 function Services() {     
     return (
-        <section id="services" className="bg-gray-100 py-20">
+        <section id="services" className="bg-white py-20">
             <div className="mx-auto max-w-screen-xl px-6 lg:px-8">
                 <div className="mx-auto mb-14 max-w-3xl text-center">
                     <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900">

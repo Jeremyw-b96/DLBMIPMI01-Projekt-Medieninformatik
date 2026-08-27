@@ -14,24 +14,24 @@ function TimelineItem({ year, title, description, media, links }) {
 
         {/* Linke Seite: Linie + Punkt */}
         <div className="flex flex-col items-center">
-            <div className="h-4 w-4 rounded-full bg-blue-600" />
+            <div className="h-4 w-4 rounded-full bg-vektor-primary" />
             <div className="mt-2 h-full w-0.5 bg-gray-300" />
         </div>
 
         {/* Rechte Seite: Inhalt */}
         <div className="pb-12">
-            <span className="text-sm font-semibold uppercase tracking-wide text-blue-600">
+            <span className="text-sm font-semibold uppercase tracking-wide text-vektor-primary">
             {year}
             </span>
 
-            <h3 className="mt-2 text-2xl font-bold text-gray-900">
+            <h3 className="mt-2 text-2xl font-bold text-vektor-dark">
             {title}
             </h3>
 
             <p className="mt-3 max-w-2xl text-gray-600 leading-7">
             {description}
             </p>
-            <button onClick={() => setIsOpen(!isOpen)} className="mt-4 inline-flex items-center rounded-lg border border-blue-600 px-4 py-2 text-sm font-medium text-blue-600 transition hover:bg-blue-600 hover:text-white">
+            <button onClick={() => setIsOpen(!isOpen)} className="mt-4 inline-flex items-center rounded-lg border border-vektor-primary/80 px-4 py-2 text-sm font-medium text-vektor-primary/80 transition hover:bg-vektor-primary hover:text-vektor-accent">
                 {isOpen ? "Weniger anzeigen" : "Mehr anzeigen"}
             </button>
         </div>
@@ -61,7 +61,7 @@ function TimelineItem({ year, title, description, media, links }) {
                 <h4 className="mb-3 font-semibold text-gray-900">Weiterführende Quellen</h4>
             <div className="space-y-2">
                 {links.map((link) => (
-                    <a key={link.url} href={link.url} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-blue-600 transition hover:text-blue-800 hover:underline">
+                    <a key={link.url} href={link.url} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-vektor-primary/80 transition hover:text-blue-800 hover:underline">
                     <span>🔗</span>
                     {link.label}
                     </a>

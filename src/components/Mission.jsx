@@ -59,7 +59,7 @@ function Mission() {
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-vektor-dark">Unsere Mission</h2>
                     <p className="text-vektor-navy/80 sm:text-xl">Unsere Mission ist es, bodenständige und praxistaugliche KI-Lösungen für den Mittelstand zugänglich zu machen – ohne Hype, aber dafür mit klarer Strategie, fundierter Technik und rechtlicher Sicherheit.</p>
                 </div>
-                <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-18 md:space-y-0 border md:p-12 border-vektor-muted/40 rounded-lg shadow-lg sm:p-6 lg:p-12">
                     {missionItems.map((item, index) => (
                         <MissionItem
                             key={index}

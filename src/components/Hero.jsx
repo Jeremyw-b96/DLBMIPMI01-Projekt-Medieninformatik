@@ -2,7 +2,7 @@ import heroImage from "../assets/images/Hero image II.png";
 
 function Hero() {
     return (
-        <section className="min-h-screen dark:bg-gray-900">
+        <section className="min-h-screen bg-vektor-primar border-vektor-navy">
             <div className="py-10 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
                 <h1 className="mb-5 mt-5 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">More than just tech: Vektor</h1>
                 <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"> Verantwortung trifft Innovation: VEKTOR macht Künstliche Intelligenz verständlich, nutzbar und sicher – für den Mittelstand von Heute und Morgen.</p>

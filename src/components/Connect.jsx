@@ -1,5 +1,6 @@
 import MediaItem from "./MediaItem";
 import { motion } from "motion/react";
+import { useRef } from 'react';
 
 const mediaItems = [
   {
@@ -32,25 +33,34 @@ const mediaItems = [
 ];
 
 function Connect() {
+  const scrollRef = useRef(null);
+  const handleWheel = (e) => {
+    if (e.deltaY === 0) return;
+    e.preventDefault();
+    scrollRef.current.scrollLeft += e.deltaY;
+  };
+
   return (
-    <section id="connect" className="bg-gray-100 py-20">
+    <section id="connect" className="bg-vektor-primary py-20">
       <div className="mx-auto max-w-screen-xl px-6 lg:px-8">
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900">
+          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-white">
             Connect
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-vektor-accent/90">
             Entdecken Sie Interviews, Podcasts, Bilderserien und weiterführende
             Fachquellen rund um VEKTOR, Künstliche Intelligenz und digitale
             Transformation.
           </p>
         </div>
         <motion.div
+            ref={scrollRef}
+            onWheel={handleWheel}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden">
+            className="flex gap-6 overflow-x-auto pt-6 pb-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden">
           {mediaItems.map((item) => (
             <div key={item.title} className="snap-start">
               <MediaItem
@@ -63,7 +73,7 @@ function Connect() {
           ))}
         </motion.div>
         <div className="mt-10 text-center">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-vektor-accent/90">
             Weitere Inhalte werden fortlaufend ergänzt. Klicken Sie auf eine
             Kachel, um Details, Videos oder Dokumente zu öffnen.
           </p>
@@ -72,5 +82,4 @@ function Connect() {
     </section>
   );
 }
-
 export default Connect
