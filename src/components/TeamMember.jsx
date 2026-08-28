@@ -19,18 +19,14 @@ function TeamMember({ image, name, role, bio, socials = {} }) {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div 
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className={`flex flex-col sm:flex-row bg-white rounded-lg shadow overflow-hidden transition-all duration-300 ${isHovered ? "-translate-y-2 shadow-xl" : "shadow"}`}
-            >
+        <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className={`flex flex-col sm:flex-row bg-white rounded-lg shadow overflow-hidden transition-all duration-300 ${isHovered ? "-translate-y-2 shadow-xl" : "shadow"}`}>
             <div className="w-full h-48 sm:w-40 sm:h-40 flex-shrink-0">
                 <img src={image} className="w-full h-full object-cover" alt={`${name} Avatar`} />
             </div>
             <div className="p-5 flex-1 flex flex-col justify-center">
                 <h3 className="text-xl font-bold tracking-tight text-vektor-dark">{name}</h3>
-                <span className="text-vektor-navy/80">{role}</span>
-                <p className="mt-3 mb-4 font-light text-vektor-navy/80">{bio}</p>
+                <span className="font-bold text-vektor-navy/80">{role}</span>
+                <p className="mt-3 mb-4 text-vektor-navy/80">{bio}</p>
                 <ul className="flex space-x-4 sm:mt-0">
                     {socialIcons.map(({ label, socials = {}, path }) => (
                         <li key={label}>

@@ -27,7 +27,7 @@ function Navbar() {
     }, [isOpen]);
 
     return (
-        <section className="bg-vektor-dark border-vektor-navy">
+        <section id="navbar" className="bg-vektor-dark border-vektor-navy">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <div className="flex items-center space-x-2 rtl:space-x-reverse">
                     <img src={logo} className="h-12" alt="Vektor Logo" />
@@ -41,8 +41,8 @@ function Navbar() {
                 </button>
                 {isOpen && (
                     <>
-                        <div className="fixed inset-0 z-30 bg-black/70 md:hidden" onClick={() => setIsOpen(false)} aria-hidden="true"/>
-                        <div id="mobile-menu" className="fixed top-0 right-0 z-40 h-screen w-80 bg-vektor-navy shadow-lg md:hidden">
+                        <div className="fixed inset-0 z-10 bg-black/70 md:hidden" onClick={() => setIsOpen(false)} aria-hidden="true"/>
+                        <div id="mobile-menu" className="fixed top-0 right-0 z-20 h-screen w-80 bg-vektor-navy shadow-lg md:hidden">
                             <div className="flex items-center justify-between px-4 py-4">
                                 <span className="text-lg font-medium text-white">Menu</span>
                                 <button type="button" onClick={() => setIsOpen(false)} className="inline-flex items-center justify-center w-10 h-10 text-sm text-vektor-muted rounded-lg hover:bg-vektor-dark focus:outline-none focus:ring-2 focus:ring-vektor-dark" aria-label="Close menu">

@@ -23,10 +23,10 @@ function Services() {
         <section id="services" className="bg-white py-20">
             <div className="mx-auto max-w-screen-xl px-6 lg:px-8">
                 <div className="mx-auto mb-14 max-w-3xl text-center">
-                    <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900">
+                    <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-vektor-dark sm:text-4xl">
                     Unsere Dienstleistungen
                     </h2>
-                    <p className="text-lg text-gray-600">
+                    <p className="text-lg text-vektor-navy/80">
                     VEKTOR begleitet Unternehmen bei der Einführung von Künstlicher Intelligenz – von
                     der strategischen Beratung über die technische Umsetzung bis hin zur rechtlichen
                     Absicherung.

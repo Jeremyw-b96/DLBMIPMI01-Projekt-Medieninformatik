@@ -9,17 +9,18 @@ function TimelineItem({ year, title, description, media, links }) {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
+        hover={{ scale: 1.05 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="relative flex gap-8">
+        className="relative flex gap-6 lg:gap-10">
 
-        {/* Linke Seite: Linie + Punkt */}
+        {/* Linke Seite */}
         <div className="flex flex-col items-center">
             <div className="h-4 w-4 rounded-full bg-vektor-primary" />
             <div className="mt-2 h-full w-0.5 bg-gray-300" />
         </div>
 
-        {/* Rechte Seite: Inhalt */}
-        <div className="pb-12">
+        {/* Rechte Seite */}
+        <div className="pb-14 flex-1">
             <span className="text-sm font-semibold uppercase tracking-wide text-vektor-primary">
             {year}
             </span>
@@ -28,13 +29,15 @@ function TimelineItem({ year, title, description, media, links }) {
             {title}
             </h3>
 
-            <p className="mt-3 max-w-2xl text-gray-600 leading-7">
+            <p className="mt-4 max-w-2xl text-vektor-navy/80 leading-7">
             {description}
             </p>
+
             <button onClick={() => setIsOpen(!isOpen)} className="mt-4 inline-flex items-center rounded-lg border border-vektor-primary/80 px-4 py-2 text-sm font-medium text-vektor-primary/80 transition hover:bg-vektor-primary hover:text-vektor-accent">
                 {isOpen ? "Weniger anzeigen" : "Mehr anzeigen"}
             </button>
         </div>
+
         {isOpen && (<motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}

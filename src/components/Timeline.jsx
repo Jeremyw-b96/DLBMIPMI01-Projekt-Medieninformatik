@@ -91,13 +91,12 @@ function Timeline() {
     return (
     <section id="timeline" className="bg-white py-20">
       <div className="mx-auto max-w-screen-xl px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl font-extrabold text-gray-900">
+        <div className="max-w-screen-md mb-8 lg:mb-16">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-vektor-dark">
             Unsere Entwicklung
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Die wichtigsten Meilensteine von VEKTOR auf dem Weg zu einem
-            modernen KI-Beratungsunternehmen.
+          <p className="text-vektor-navy/80 sm:text-xl">
+            Die wichtigsten Meilensteine von VEKTOR auf dem Weg zu einem modernen KI-Beratungsunternehmen.
           </p>
         </div>
 
