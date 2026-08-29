@@ -41,13 +41,13 @@ function Connect() {
   };
 
   return (
-    <section id="connect" className="bg-vektor-primary py-20">
+    <section id="connect" className="bg-white py-20">
       <div className="mx-auto max-w-screen-xl px-6 lg:px-8">
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-white">
+          <h2 className="mb-4 text-4xl font-extrabold text-vektor-dark">
             Connect
           </h2>
-          <p className="text-lg text-vektor-accent/90">
+          <p className="text-lg text-vektor-navy/80">
             Entdecken Sie Interviews, Podcasts, Bilderserien und weiterführende
             Fachquellen rund um VEKTOR, Künstliche Intelligenz und digitale
             Transformation.
@@ -73,7 +73,7 @@ function Connect() {
           ))}
         </motion.div>
         <div className="mt-10 text-center">
-          <p className="text-sm text-vektor-accent/90">
+          <p className="text-sm text-vektor-navy/40">
             Weitere Inhalte werden fortlaufend ergänzt. Klicken Sie auf eine
             Kachel, um Details, Videos oder Dokumente zu öffnen.
           </p>

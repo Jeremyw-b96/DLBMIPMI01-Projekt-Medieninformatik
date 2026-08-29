@@ -27,7 +27,7 @@ function Navbar() {
     }, [isOpen]);
 
     return (
-        <section id="navbar" className="bg-vektor-dark border-vektor-navy">
+        <section id="navbar" className="sticky top-0 z-50 bg-vektor-dark border-vektor-navy">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <div className="flex items-center space-x-2 rtl:space-x-reverse">
                     <img src={logo} className="h-12" alt="Vektor Logo" />
@@ -42,25 +42,25 @@ function Navbar() {
                 {isOpen && (
                     <>
                         <div className="fixed inset-0 z-10 bg-black/70 md:hidden" onClick={() => setIsOpen(false)} aria-hidden="true"/>
-                        <div id="mobile-menu" className="fixed top-0 right-0 z-20 h-screen w-80 bg-vektor-navy shadow-lg md:hidden">
-                            <div className="flex items-center justify-between px-4 py-4">
-                                <span className="text-lg font-medium text-white">Menu</span>
-                                <button type="button" onClick={() => setIsOpen(false)} className="inline-flex items-center justify-center w-10 h-10 text-sm text-vektor-muted rounded-lg hover:bg-vektor-dark focus:outline-none focus:ring-2 focus:ring-vektor-dark" aria-label="Close menu">
-                                    <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18 18 6M6 6l12 12"/>
-                                    </svg>
-                                </button>
+                            <div id="mobile-menu" className="fixed top-0 right-0 z-20 h-screen w-80 bg-vektor-navy shadow-lg md:hidden">
+                                <div className="flex items-center justify-between px-4 py-4">
+                                    <span className="text-lg font-medium text-white">Menu</span>
+                                    <button type="button" onClick={() => setIsOpen(false)} className="inline-flex items-center justify-center w-10 h-10 text-sm text-vektor-muted rounded-lg hover:bg-vektor-dark focus:outline-none focus:ring-2 focus:ring-vektor-dark" aria-label="Close menu">
+                                        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18 18 6M6 6l12 12"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <ul className="font-medium flex flex-col p-4">
+                                    {navItems.map((item) => (
+                                        <li key={item.label}>
+                                            <a href={item.href} onClick={() => setIsOpen(false)} className="block py-3 px-3 text-white rounded-sm hover:bg-vektor-dark hover:text-vektor-accent transition-colors">
+                                                {item.label}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
-                            <ul className="font-medium flex flex-col p-4">
-                                {navItems.map((item) => (
-                                    <li key={item.label}>
-                                        <a href={item.href} onClick={() => setIsOpen(false)} className="block py-3 px-3 text-white rounded-sm hover:bg-vektor-dark hover:text-vektor-accent transition-colors">
-                                            {item.label}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
                     </>
                 )}
                 <div className="hidden w-full md:block md:w-auto" id="navbar-default">

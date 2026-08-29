@@ -19,9 +19,9 @@ function TeamMember({ image, name, role, bio, socials = {} }) {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className={`flex flex-col sm:flex-row bg-white rounded-lg shadow overflow-hidden transition-all duration-300 ${isHovered ? "-translate-y-2 shadow-xl" : "shadow"}`}>
-            <div className="w-full h-48 sm:w-40 sm:h-40 flex-shrink-0">
-                <img src={image} className="w-full h-full object-cover" alt={`${name} Avatar`} />
+        <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className={`flex flex-col sm:flex-row bg-white rounded-lg shadow-vektor-accent/30 overflow-hidden transition-all duration-300 ${isHovered ? "-translate-y-2 shadow-xl" : "shadow"}`}>
+            <div className="w-full pt-4 pl-4 pr-4 h-60 sm:w-40 sm:h-40 flex-shrink-0">
+                <img src={image} className="w-full h-full object-cover rounded-lg" alt={`${name} Avatar`} />
             </div>
             <div className="p-5 flex-1 flex flex-col justify-center">
                 <h3 className="text-xl font-bold tracking-tight text-vektor-dark">{name}</h3>

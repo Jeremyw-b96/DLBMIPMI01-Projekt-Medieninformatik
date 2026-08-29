@@ -53,13 +53,13 @@ const missionItems = [
 
 function Mission() {
     return (
-        <section id="werte" className="bg-white py-20">
+        <section id="werte" className="bg-vektor-primary py-20">
             <div className="px-4 mx-auto max-w-screen-xl lg:px-6">
                 <div className="max-w-screen-md mb-8 lg:mb-16">
-                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-vektor-dark">Unsere Mission</h2>
-                    <p className="text-vektor-navy/80 sm:text-xl">Unsere Mission ist es, bodenständige und praxistaugliche KI-Lösungen für den Mittelstand zugänglich zu machen – ohne Hype, aber dafür mit klarer Strategie, fundierter Technik und rechtlicher Sicherheit.</p>
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">Unsere Mission</h2>
+                    <p className="text-vektor-accent sm:text-xl">Unsere Mission ist es, bodenständige und praxistaugliche KI-Lösungen für den Mittelstand zugänglich zu machen – ohne Hype, aber dafür mit klarer Strategie, fundierter Technik und rechtlicher Sicherheit.</p>
                 </div>
-                <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-18 md:space-y-0 border md:p-12 border-vektor-muted/40 rounded-lg shadow-lg sm:p-6 lg:p-16">
+                <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-18 md:space-y-0 border md:p-12 border-vektor-muted/40 bg-white rounded-lg shadow-lg sm:p-6 lg:p-16">
                     {missionItems.map((item, index) => (
                         <MissionItem
                             key={index}
