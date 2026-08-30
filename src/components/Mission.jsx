@@ -1,4 +1,5 @@
 import MissionItem from "./MissionItem";
+import Aurora from './Aurora';
  
 const missionItems = [
     {
@@ -53,13 +54,23 @@ const missionItems = [
 
 function Mission() {
     return (
-        <section id="werte" className="bg-vektor-primary py-20">
-            <div className="px-4 mx-auto max-w-screen-xl lg:px-6">
+        <section id="werte" className="relative overflow-hidden bg-vektor-primary py-20">
+            <div className="flex pointer-events-none absolute inset-0 z-0 items-center justify-center">
+                <div className="h-full w-full blur-[4px] opacity-40">
+                    <Aurora
+                    colorStops={["#406E8E", "#CBF7ED"]}
+                    blend={0.5}
+                    amplitude={1.0}
+                    speed={1}
+                    />
+                </div>
+            </div>
+            <div className="relative z-10 px-4 mx-auto max-w-screen-xl lg:px-6">
                 <div className="max-w-screen-md mb-8 lg:mb-16">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">Unsere Mission</h2>
                     <p className="text-vektor-accent sm:text-xl">Unsere Mission ist es, bodenständige und praxistaugliche KI-Lösungen für den Mittelstand zugänglich zu machen – ohne Hype, aber dafür mit klarer Strategie, fundierter Technik und rechtlicher Sicherheit.</p>
                 </div>
-                <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-18 md:space-y-0 border md:p-12 border-vektor-muted/40 bg-white rounded-lg shadow-lg sm:p-6 lg:p-16">
+                <div className="space-y-8 p-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-18 md:space-y-0 border md:p-12 border-vektor-muted/40 bg-white rounded-lg shadow-lg sm:p-6 lg:p-16">
                     {missionItems.map((item, index) => (
                         <MissionItem
                             key={index}

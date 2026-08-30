@@ -27,7 +27,7 @@ function Navbar() {
     }, [isOpen]);
 
     return (
-        <section id="navbar" className="sticky top-0 z-50 bg-vektor-dark border-vektor-navy">
+        <section id="navbar" className="sticky top-0 z-60 bg-vektor-dark border-vektor-navy">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <div className="flex items-center space-x-2 rtl:space-x-reverse">
                     <img src={logo} className="h-12" alt="Vektor Logo" />
