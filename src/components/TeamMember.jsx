@@ -28,7 +28,7 @@ function TeamMember({ image, name, role, bio, socials = {} }) {
                 <span className="font-bold text-vektor-navy/80">{role}</span>
                 <p className="mt-3 mb-4 text-vektor-navy/80">{bio}</p>
                 <ul className="flex space-x-4 sm:mt-0">
-                    {socialIcons.map(({ label, socials = {}, path }) => (
+                    {socialIcons.map(({ label, path }) => (
                         <li key={label}>
                             <a href={socials[label.toLowerCase()] || "#"} aria-label={label} className="text-vektor-primary hover:text-vektor-dark transition-colors duration-200">
                                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

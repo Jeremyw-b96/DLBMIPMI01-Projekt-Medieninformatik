@@ -58,7 +58,7 @@ function Team() {
             <div className="flex pointer-events-none absolute inset-0 z-0 items-center justify-center">
                 <div className="h-full w-full blur-[4px] opacity-40">
                     <Aurora
-                    colorStops={["#406E8E", "#CBF7ED"]}
+                    colorStops={["#406E8E", "#7FB3C9", "#CBF7ED"]}
                     blend={0.5}
                     amplitude={1.0}
                     speed={1}

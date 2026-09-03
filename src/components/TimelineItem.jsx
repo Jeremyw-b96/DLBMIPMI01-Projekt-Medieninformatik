@@ -8,8 +8,8 @@ function TimelineItem({ year, title, description, media, links }) {
     <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        hover={{ scale: 1.05 }}
+        transition={{ duration: 0.8 }}
+        whileHover={{ scale: 1.10 }}
         viewport={{ once: true, amount: 0.3 }}
         className="relative flex gap-6 lg:gap-10">
 
@@ -49,7 +49,6 @@ function TimelineItem({ year, title, description, media, links }) {
                         <div className="mb-3 flex h-32 items-center justify-center rounded-xl bg-gray-200">
                             {item.type === "image" && "🖼️"}
                             {item.type === "video" && "▶️"}
-                            {item.type === "image" && "🖼️"}
                         </div>
 
                         <h4 className="font-semibold text-gray-900">

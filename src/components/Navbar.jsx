@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import logo from "../assets/images/vektor_logo_embedded.svg";
 
 const navItems = [
-    { label: "Mission", href: "#werte" },
     { label: "Leistungen", href: "#services" },
     { label: "Team", href: "#team" },
     { label: "Zeitleiste", href: "#timeline" },
+    { label: "Mission", href: "#werte" },
     { label: "Connect", href: "#connect" }
 ];
 
@@ -27,7 +27,7 @@ function Navbar() {
     }, [isOpen]);
 
     return (
-        <section id="navbar" className="sticky top-0 z-60 bg-vektor-dark border-vektor-navy">
+        <section id="navbar" className="sticky top-0 z-50 bg-vektor-dark border-vektor-navy">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <div className="flex items-center space-x-2 rtl:space-x-reverse">
                     <img src={logo} className="h-12" alt="Vektor Logo" />
@@ -41,8 +41,8 @@ function Navbar() {
                 </button>
                 {isOpen && (
                     <>
-                        <div className="fixed inset-0 z-10 bg-black/70 md:hidden" onClick={() => setIsOpen(false)} aria-hidden="true"/>
-                            <div id="mobile-menu" className="fixed top-0 right-0 z-20 h-screen w-80 bg-vektor-navy shadow-lg md:hidden">
+                        <div className="fixed inset-0 z-10 backdrop-blur-xs bg-black/70 md:hidden" onClick={() => setIsOpen(false)} aria-hidden="true"/>
+                            <div id="mobile-menu" className="fixed top-0 right-0 z-20 h-screen w-70 bg-vektor-navy/70 rounded shadow-lg md:hidden">
                                 <div className="flex items-center justify-between px-4 py-4">
                                     <span className="text-lg font-medium text-white">Menu</span>
                                     <button type="button" onClick={() => setIsOpen(false)} className="inline-flex items-center justify-center w-10 h-10 text-sm text-vektor-muted rounded-lg hover:bg-vektor-dark focus:outline-none focus:ring-2 focus:ring-vektor-dark" aria-label="Close menu">
@@ -60,6 +60,9 @@ function Navbar() {
                                         </li>
                                     ))}
                                 </ul>
+                                <div className="absolute bottom-0 left-0 w-full p-4 text-center text-vektor-muted text-sm">
+                                    &copy; {new Date().getFullYear()} Vektor
+                                </div>
                             </div>
                     </>
                 )}

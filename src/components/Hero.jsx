@@ -3,7 +3,7 @@ import ScrollExpand from "./ScrollExpand";
 
 function Hero() {
     return (
-        <section className="min-h-fit bg-vektor-primar">
+        <section className="min-h-fit bg-vektor-dark">
             <ScrollExpand
                 src={heroImage}
                 alt="Das VEKTOR-Team bei der Projektarbeit am Whiteboard"

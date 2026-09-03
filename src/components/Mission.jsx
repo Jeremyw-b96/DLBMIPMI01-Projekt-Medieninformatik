@@ -58,7 +58,7 @@ function Mission() {
             <div className="flex pointer-events-none absolute inset-0 z-0 items-center justify-center">
                 <div className="h-full w-full blur-[4px] opacity-40">
                     <Aurora
-                    colorStops={["#406E8E", "#CBF7ED"]}
+                    colorStops={["#406E8E", "#7FB3C9", "#CBF7ED"]}
                     blend={0.5}
                     amplitude={1.0}
                     speed={1}
@@ -70,7 +70,7 @@ function Mission() {
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">Unsere Mission</h2>
                     <p className="text-vektor-accent sm:text-xl">Unsere Mission ist es, bodenständige und praxistaugliche KI-Lösungen für den Mittelstand zugänglich zu machen – ohne Hype, aber dafür mit klarer Strategie, fundierter Technik und rechtlicher Sicherheit.</p>
                 </div>
-                <div className="space-y-8 p-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-18 md:space-y-0 border md:p-12 border-vektor-muted/40 bg-white rounded-lg shadow-lg sm:p-6 lg:p-16">
+                <div className="space-y-8 p-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-16 md:space-y-0 border md:p-12 border-vektor-muted/40 bg-white rounded-lg shadow-lg sm:p-6 lg:p-16">
                     {missionItems.map((item, index) => (
                         <MissionItem
                             key={index}
