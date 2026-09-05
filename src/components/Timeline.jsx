@@ -5,7 +5,7 @@ const timelineEvents = [
     year: "2020",
     title: "Die Gründung",
     description:
-      "Dr. Daniel Weber, Julia Beer und Jonas Roth gründen VEKTOR mit dem Ziel, den Mittelstand fit für die Zukunft der Künstlichen Intelligenz zu machen.",
+      "Dr. Daniel Weber und Markus Heller gründen VEKTOR mit dem Ziel, den Mittelstand fit für die Zukunft der Künstlichen Intelligenz zu machen.",
     media: [
       { type: "image", title: "Gründerfoto" },
       { type: "video", title: "Interview mit den Gründern" },
@@ -17,9 +17,9 @@ const timelineEvents = [
   },
   {
     year: "2021",
-    title: "Erstes Büro & erstes Kundenprojekt",
+    title: "Umzug und erstes großes Kundenprojekt",
     description:
-      "VEKTOR bezieht ein Büro in München-Haidhausen und realisiert das erste NLP-Projekt für einen Handwerksbetrieb.",
+      "VEKTOR bezieht ein Büro in München-Haidhausen und realisiert das erste ML-Projekt für einen regional Logistikbetrieb.",
     media: [
       { type: "image", title: "Gründerfoto" },
       { type: "video", title: "Interview mit den Gründern" },
@@ -31,7 +31,7 @@ const timelineEvents = [
   },
   {
     year: "2022",
-    title: "Wachstum & erste Workshops",
+    title: "Vergrößerung des Teams und IHK Workshops",
     description:
       "Das Team wächst auf zehn Mitarbeitende und startet gemeinsam mit der IHK Workshops zu KI und Datenschutz.",
     media: [
@@ -45,9 +45,9 @@ const timelineEvents = [
   },
   {
     year: "2023",
-    title: "Pilotprojekte & erste Partnerschaften",
+    title: "Pilotprojekte KI klar & konkret",
     description:
-      "VEKTOR entwickelt das Beratungsmodell „KI klar & konkret“, das Unternehmen Schritt für Schritt von der Idee bis zur Umsetzung begleitet.Parallel startet die Produktion einer Kurzfilmreihe über reale KI-Anwendungsfälle.",
+      "Entwicklung des Beratungsmodell „KI klar & konkret“, das Unternehmen Schritt für Schritt von der Idee bis zur Umsetzung begleitet.",
     media: [
       { type: "image", title: "Gründerfoto" },
       { type: "video", title: "Interview mit den Gründern" },
@@ -59,9 +59,9 @@ const timelineEvents = [
   },
   {
     year: "2024",
-    title: "Expansion & Netzwerk für Digitale Transformation",
+    title: "Netzwerk für Digitale Transformation",
     description:
-      "VEKTOR vergrößert sich räumlich und arbeitet erstmals mit überregionalen IT-Systemhäusern zusammen. Die Firma nimmt an der Digitalmesse Bayern teil, wo sie live eine KI-gestützte Datenanalyse vorführt.",
+      "Wir vergrößern uns räumlich und arbeiten erstmals mit überregionalen IT-Systemhäusern zusammen. Dazu nehmen wir das erste Mal an der Digitalmesse Bayern teil, wo wir live eine KI-gestützte Datenanalyse vorführen.",
     media: [
       { type: "image", title: "Gründerfoto" },
       { type: "video", title: "Interview mit den Gründern" },
@@ -73,9 +73,9 @@ const timelineEvents = [
   },
   {
     year: "2025",
-    title: "Weiterbildung & neue Services",
+    title: "Neue Services",
     description:
-      "Das Unternehmen startet ein internes Trainingsprogramm für ethische KI-Entwicklung, besonders für generative Systeme. Außerdem wird der Servicebereich um generative Text- und Bild-KI erweitert.",
+      "Das Unternehmen startet ein internes Trainingsprogramm für spezialisierte KI-Entwicklung, besonders für generative Systeme. Außerdem wird der Servicebereich um generative Text- und Bild-KI erweitert.",
     media: [
       { type: "image", title: "Gründerfoto" },
       { type: "video", title: "Interview mit den Gründern" },
@@ -96,7 +96,7 @@ function Timeline() {
             Unsere Entwicklung
           </h2>
           <p className="text-vektor-navy/80 sm:text-xl">
-            Die wichtigsten Meilensteine von VEKTOR auf dem Weg zu einem modernen KI-Beratungsunternehmen.
+             Sechs Jahre, ein roter Faden: Wie VEKTOR vom Gründungsteam zum KI-Partner für den Mittelstand wurde.
           </p>
         </div>
 

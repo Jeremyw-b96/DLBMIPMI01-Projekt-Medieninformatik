@@ -7,14 +7,14 @@ const missionItems = [
             <path fillRule="evenodd" clipRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"/>
         ),
         title: "Technische Entwicklung",
-        description: "Konzeption, Entwicklung und Integration maßgeschneiderter Machine-Learning-Lösungen – von Prozessautomatisierung bis Datenanalyse."
+        description: "Maßgeschneiderte ML-Lösungen, die zu Ihrem Betrieb passen – von der Prozessautomatisierung bis zur Datenanalyse."
     },
     {
         icon: (
             <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
         ),
         title: "Regulatorische Sicherheit",
-        description: "DSGVO-konforme Umsetzung Ihrer KI-Projekte, Risikoanalysen und rechtliche Begleitung für maximale Compliance."
+        description: "DSGVO-konform von Tag eins. Wir übernehmen Risikoanalyse und rechtliche Begleitung, damit Sie sich auf Ihr Geschäft konzentrieren können."
     },
     {
         icon: (
@@ -24,7 +24,7 @@ const missionItems = [
             </>
         ),
         title: "Prozessautomatisierung",
-        description: "Effizienzsteigerung durch intelligente Automatisierungen – von Predictive Maintenance bis KI-gestützter Kommunikation."
+        description: "Weniger Routine, mehr Wirkung: intelligente Automatisierung für Wartung, Kommunikation und mehr."
     },
     {
         icon: (
@@ -34,21 +34,21 @@ const missionItems = [
             </>
         ),
         title: "Datenstrategie & Infrastruktur",
-        description: "Sichere und skalierbare Datenarchitekturen für fundierte, datengetriebene Entscheidungen in Ihrem Unternehmen."
+        description: "Ihre Daten, sicher und nutzbar gemacht – als Grundlage für Entscheidungen, die zählen."
     },
     {
         icon: (
             <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
         ),
         title: "Schulung & Wissenstransfer",
-        description: "Workshops und Trainings zu Chancen, Grenzen und ethischen Aspekten der KI – praxisnah und verständlich vermittelt."
+        description: "KI verständlich erklärt: Workshops, die Chancen und Grenzen greifbar machen – für Teams auf allen Ebenen."
     },
     {
         icon: (
             <path fillRule="evenodd" clipRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/>
         ),
         title: "Partnerschaftliche Beratung",
-        description: "Interdisziplinäre Expertise in Technik, Recht und Strategie – Beratung auf Augenhöhe für nachhaltige Erfolge."
+        description: "Interdisziplinäre Expertise in Technik und Recht zur ganzheitlichen Beratung für nachhaltigen Erfolg."
     }
 ];
 
@@ -68,7 +68,7 @@ function Mission() {
             <div className="relative z-10 px-4 mx-auto max-w-screen-xl lg:px-6">
                 <div className="mx-auto mb-14 max-w-3xl text-center">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">Unsere Mission</h2>
-                    <p className="text-vektor-accent sm:text-xl">Unsere Mission ist es, bodenständige und praxistaugliche KI-Lösungen für den Mittelstand zugänglich zu machen – ohne Hype, aber dafür mit klarer Strategie, fundierter Technik und rechtlicher Sicherheit.</p>
+                    <p className="text-vektor-accent sm:text-xl">Wir holen KI aus der Theorie – und bringen sie in den Arbeitsalltag des Mittelstands. Bodenständig, praxistauglich, ohne Hype.</p>
                 </div>
                 <div className="space-y-8 p-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-16 md:space-y-0 border md:p-12 border-vektor-muted/40 bg-white rounded-lg shadow-lg sm:p-6 lg:p-16">
                     {missionItems.map((item, index) => (

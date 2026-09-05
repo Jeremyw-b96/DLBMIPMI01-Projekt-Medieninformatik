@@ -21,7 +21,7 @@ const teamMembers = [
         image: Markus,
         name: "Markus Heller",
         role: "CTO & KI-Entwickler",
-        bio: "Entwickelt smarte KI-Architekturen und hält das technische Fundament stabil.",
+        bio: "Entwickelt smarte KI-Lösungen und hält das technische Fundament stabil.",
         socials: {
         facebook: "https://facebook.com/",
         twitter: "https://twitter.com/",
@@ -32,7 +32,7 @@ const teamMembers = [
         image: Sofia,
         name: "Sofia Brandt",
         role: "COO",
-        bio: "Strukturiert Prozesse so, dass Projekte reibungslos und effizient laufen.",
+        bio: "Sorgt dafür, dass Projekte reibungslos und effizient laufen.",
         socials: {
         facebook: "https://facebook.com/",
         twitter: "https://twitter.com/",
@@ -43,7 +43,7 @@ const teamMembers = [
         image: Jonas,
         name: "Jonas Richter",
         role: "Marketing & Sale",
-        bio: "Verwandelt technische Inhalte in Botschaften, die jeder versteht.",
+        bio: "Übersetzt unsere Technik so, dass sie jeder versteht.",
         socials: {
         facebook: "https://facebook.com/",
         twitter: "https://twitter.com/",
@@ -68,8 +68,8 @@ function Team() {
                 <div className="relative z-10 px-10 mx-auto max-w-screen-xl lg:px-6">
                     <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">Unser Team</h2>
-                        <p className="text-vektor-accent sm:text-xl">VEKTOR ist ein junges, dynamisches Beratungsunternehmen mit Sitz in München, das sich auf die
-                            Einführung und Umsetzung von Künstlicher Intelligenz (KI) in kleinen und mittelständischen Unternehmen spezialisiert hat.</p>
+                        <p className="text-vektor-accent sm:text-xl">Wir sind ein junges, dynamisches Beratungsunternehmen mit Sitz in München, das sich auf die
+                            Einführung von KI in kleinen und mittelständischen Unternehmen spezialisiert hat.</p>
                     </div>
                     <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
                         {teamMembers.map((member) => (
@@ -84,8 +84,7 @@ function Team() {
                         ))}
                     </div>
                     <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-                        <p className="text-vektor-accent sm:text-xl">Unser Team vereint technisches Know-how, juristisches Fachwissen und Beratungserfahrung. VEKTOR steht für Interdisziplinarität,
-                        agile Zusammenarbeit und den Willen, technologische Innovation sinnvoll und verantwortungsvoll einzusetzen.</p>
+                        <p className="text-vektor-accent sm:text-xl">Was uns verbindet: der Wille, Innovation sinnvoll und verantwortungsvoll einzusetzen.</p>
                     </div>
                 </div>
         </section>

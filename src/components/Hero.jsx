@@ -15,7 +15,7 @@ function Hero() {
                         Wir machen KI verständlich, praxistauglich und vor allem gewinnbringend.
                     </h1>
                     <p className="mb-6 text-md sm:text-xl font-normal text-white/95 leading-relaxed text-shadow-lg backdrop-blur-md">
-                        Wir setzen uns das Ziel, welches sich in unserem Namen verbirgt: Verantwortungsvolle Entwicklung von KI-Technologien und Organisationsberatung.
+                        VEKTOR macht Künstliche Intelligenz für den Mittelstand greifbar: mit klarer Strategie, fundierter Technik und rechtlicher Sicherheit. Ganz ohne Buzzwords.
                     </p>
                     <div className="flex flex-wrap sm:flex-row justify-center items-stretch sm:items-center gap-6 mt-16 pt-4">
                         <a href="#team" className="inline-flex justify-center items-center py-3 px-6 text-base font-medium text-center text-vektor-accent rounded-lg bg-vektor-primary hover:bg-vektor-navy transition-colors focus:ring-2 focus:ring-vektor-accent">
