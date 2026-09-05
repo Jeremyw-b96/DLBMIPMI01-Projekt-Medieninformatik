@@ -42,7 +42,7 @@ function Navbar() {
                 {isOpen && (
                     <>
                         <div className="fixed inset-0 z-10 backdrop-blur-xs bg-black/70 md:hidden" onClick={() => setIsOpen(false)} aria-hidden="true"/>
-                            <div id="mobile-menu" className="fixed top-0 right-0 z-20 h-screen w-70 bg-vektor-navy/70 rounded shadow-lg md:hidden">
+                            <div id="mobile-menu" className="fixed top-0 right-0 z-20 h-screen w-60 bg-vektor-navy/70 rounded shadow-lg md:hidden">
                                 <div className="flex items-center justify-between px-4 py-4">
                                     <span className="text-lg font-medium text-white">Menu</span>
                                     <button type="button" onClick={() => setIsOpen(false)} className="inline-flex items-center justify-center w-10 h-10 text-sm text-vektor-muted rounded-lg hover:bg-vektor-dark focus:outline-none focus:ring-2 focus:ring-vektor-dark" aria-label="Close menu">

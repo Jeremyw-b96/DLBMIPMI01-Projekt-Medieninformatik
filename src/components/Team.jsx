@@ -68,7 +68,7 @@ function Team() {
                 <div className="relative z-10 px-10 mx-auto max-w-screen-xl lg:px-6">
                     <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">Unser Team</h2>
-                        <p className="font-light text-vektor-accent/90 sm:text-xl">VEKTOR ist ein junges, dynamisches Beratungsunternehmen mit Sitz in München, das sich auf die
+                        <p className="text-vektor-accent sm:text-xl">VEKTOR ist ein junges, dynamisches Beratungsunternehmen mit Sitz in München, das sich auf die
                             Einführung und Umsetzung von Künstlicher Intelligenz (KI) in kleinen und mittelständischen Unternehmen spezialisiert hat.</p>
                     </div>
                     <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
@@ -84,7 +84,7 @@ function Team() {
                         ))}
                     </div>
                     <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-                        <p className="font-light text-vektor-accent/90 sm:text-xl">Unser Team vereint technisches Know-how, juristisches Fachwissen und Beratungserfahrung. VEKTOR steht für Interdisziplinarität,
+                        <p className="text-vektor-accent sm:text-xl">Unser Team vereint technisches Know-how, juristisches Fachwissen und Beratungserfahrung. VEKTOR steht für Interdisziplinarität,
                         agile Zusammenarbeit und den Willen, technologische Innovation sinnvoll und verantwortungsvoll einzusetzen.</p>
                     </div>
                 </div>

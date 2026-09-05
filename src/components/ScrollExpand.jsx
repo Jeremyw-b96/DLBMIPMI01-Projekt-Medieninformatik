@@ -12,13 +12,29 @@ const ScrollExpand = ({
   mediaType = 'image',
   poster = '',
   alt = '',
-  title = <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <h1 className="text-6xl pb-1 md:text-8xl lg:text-9xl font-black tracking-[-0.05em] tracking-tight leading-tight uppercase backdrop-blur-md">
+  title = <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <h1 className="text-vektor-logo/80 text-6xl py-8 md:text-8xl lg:text-9xl font-black tracking-[-0.05em] tracking-tight leading-tight uppercase text-shadow-lg shadow-vektor-logo/50 backdrop-blur-lg">
                 Vektor
             </h1>
-            <span className="mb-4 rounded-full border border-vektor-accent/80 bg-vektor-accent/30 px-4 py-1.5 text-sm tracking-[0.25em] uppercase backdrop-blur-lg">
-                Beratung auf Augenhöhe
-            </span>
+            <div className="grid grid-cols-1 sm:flex sm:flex-wrap sm:gap-4 justify-center">
+              <span className="mb-4 rounded-full border border-vektor-accent/80 bg-vektor-accent/30 px-4 py-1.5 text-sm tracking-[0.25em] uppercase backdrop-blur-lg font-bold text-lg text-white">
+                  KI-Beratung
+              </span>
+              <span className="mb-4 rounded-full border border-vektor-accent/80 bg-vektor-accent/30 px-4 py-1.5 text-sm tracking-[0.25em] uppercase backdrop-blur-lg font-bold text-lg text-white">
+                  Prozessautomatisierung
+              </span>
+              <span className="mb-4 rounded-full border border-vektor-accent/80 bg-vektor-accent/30 px-4 py-1.5 text-sm tracking-[0.25em] uppercase backdrop-blur-lg font-bold text-lg text-white">
+                  KI-Entwicklung
+              </span>
+            </div>
+            <div className="grid grid-cols-1 sm:flex sm:flex-wrap sm:gap-4 justify-center">
+              <span className="mb-4 rounded-full border border-vektor-accent/80 bg-vektor-accent/30 px-4 py-1.5 text-sm tracking-[0.25em] uppercase backdrop-blur-lg font-bold text-lg text-white">
+                  KI-Integration
+              </span>
+              <span className="mb-4 rounded-full border border-vektor-accent/80 bg-vektor-accent/30 px-4 py-1.5 text-sm tracking-[0.25em] uppercase backdrop-blur-lg font-bold text-lg text-white">
+                  Rechtliche Absicherung
+              </span>
+            </div>
           </div>,
   scrollHint = '',
   startWidth = 70,

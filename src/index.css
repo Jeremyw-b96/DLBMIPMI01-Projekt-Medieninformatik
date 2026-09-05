@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  --color-vektor-logo: #42a5ad;
   --color-vektor-dark: #161925;
   --color-vektor-navy: #23395b;
   --color-vektor-primary: #406e8e;

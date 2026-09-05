@@ -43,11 +43,11 @@ function Connect() {
   return (
     <section id="connect" className="bg-white py-20">
       <div className="mx-auto max-w-screen-xl px-6 lg:px-8">
-        <div className="mx-auto mb-14 max-w-3xl text-center">
+        <div className="max-w-screen-md mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl font-extrabold text-vektor-dark">
             Connect
           </h2>
-          <p className="text-lg text-vektor-navy/80">
+          <p className="sm:text-xl text-vektor-navy/80">
             Entdecken Sie Interviews, Podcasts, Bilderserien und weiterführende
             Fachquellen rund um VEKTOR, Künstliche Intelligenz und digitale
             Transformation.

@@ -10,14 +10,14 @@ function Hero() {
                 scrollHint="Scroll innerhalb des Bildes, um mehr zu erfahren"
                 useWindowScroll
                 >
-                <div className="flex flex-col justify-center max-w-4xl mx-auto min-h-[70vh]">
-                    <h1 className="mb-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white text-shadow-lg backdrop-blur-md">
+                <div className="flex flex-col justify-center max-w-1/2 mx-auto min-h-[70vh]">
+                    <h1 className="text-white mb-5 text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-shadow-lg backdrop-blur-md">
                         Wir machen KI verständlich, praxistauglich und vor allem gewinnbringend.
                     </h1>
-                    <p className="mb-6 pt-6 text-base sm:text-lg font-normal text-white/95 leading-relaxed backdrop-blur-md">
+                    <p className="mb-6 text-md sm:text-xl font-normal text-white/95 leading-relaxed text-shadow-lg backdrop-blur-md">
                         Wir setzen uns das Ziel, welches sich in unserem Namen verbirgt: Verantwortungsvolle Entwicklung von KI-Technologien und Organisationsberatung.
                     </p>
-                    <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-6 mt-16">
+                    <div className="flex flex-wrap sm:flex-row justify-center items-stretch sm:items-center gap-6 mt-16 pt-4">
                         <a href="#team" className="inline-flex justify-center items-center py-3 px-6 text-base font-medium text-center text-vektor-accent rounded-lg bg-vektor-primary hover:bg-vektor-navy transition-colors focus:ring-2 focus:ring-vektor-accent">
                             Unser Team
                             <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path></svg>

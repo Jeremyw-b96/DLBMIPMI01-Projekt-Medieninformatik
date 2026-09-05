@@ -66,7 +66,7 @@ function Mission() {
                 </div>
             </div>
             <div className="relative z-10 px-4 mx-auto max-w-screen-xl lg:px-6">
-                <div className="max-w-screen-md mb-8 lg:mb-16">
+                <div className="mx-auto mb-14 max-w-3xl text-center">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">Unsere Mission</h2>
                     <p className="text-vektor-accent sm:text-xl">Unsere Mission ist es, bodenständige und praxistaugliche KI-Lösungen für den Mittelstand zugänglich zu machen – ohne Hype, aber dafür mit klarer Strategie, fundierter Technik und rechtlicher Sicherheit.</p>
                 </div>
