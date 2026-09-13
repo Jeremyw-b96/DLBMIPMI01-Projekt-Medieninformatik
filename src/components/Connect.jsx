@@ -9,7 +9,7 @@ const mediaItems = [
   {
     type: "video",
     title: "Gründerinterview",
-    subtitleShort: "Einblick in die Gründungsgeschichte von VEKTOR",
+    subtitleShort: "Näheres zur Gründungsgeschichte von VEKTOR.",
     subtitle: "Unser Gründer gibt uns Einblicke in die Gründungsgeschichte von VEKTOR.",
     src: Interview
   },
@@ -23,15 +23,15 @@ const mediaItems = [
   {
     type: "video",
     title: "Markus Heller zu Gast im IT-Talk",
-    subtitleShort: "Einblick in die Arbeit mit KI",
-    subtitle: "Ein Ausschnitt aus dem IT-Talk Podcast mit unserem CTO",
+    subtitleShort: "Einblick in die Arbeit mit KI.",
+    subtitle: "Ein Ausschnitt aus dem IT-Talk Podcast mit unserem CTO.",
     src: Podcast
   },
   {
     type: "paper",
     title: "Impact of Artificial Intelligence on Businesses",
-    subtitleShort: "Einfluss von KI auf Unternehmen",
-    subtitle: "PDF-Version des Papers zu Businnes Impacts of AI",
+    subtitleShort: "Einfluss von KI auf Unternehmen.",
+    subtitle: "PDF-Version des Papers zu Businnes Impacts of AI.",
     src: "https://arxiv.org/pdf/1905.02092"
   }
 ];
@@ -75,7 +75,7 @@ function Connect() {
           ))}
         </motion.div>
         <div className="mt-10 text-center">
-          <p className="text-sm text-vektor-navy/40">Weitere Inhalte werden fortlaufend ergänzt. </p>
+          <p className="text-sm text-vektor-navy/40">Inhalte werden fortlaufend ergänzt. </p>
         </div>
       </div>
     </section>
