@@ -1,6 +1,6 @@
 # VEKTOR
 
-VEKTOR ist ein fiktives KI-Beratungsunternehmen und wurde im Rahmen eines **Universitätsprojekts im Bachelorstudium Medieninformatik** entwickelt. Die Website dient als moderne Unternehmenspräsentation und setzt verschiedene interaktive und multimediale Elemente um.
+VEKTOR ist ein fiktives KI-Beratungsunternehmen, das im Rahmen eines **Universitätsprojekts im Bachelorstudium Medieninformatik** konzipiert wurde. Die selbst entwickelte Microsite dient der Präsentation dieses Unternehmens und basiert auf React.js und Tailwind CSS. Der Fokus liegt auf einer dynamischen, modernen und multimedial aufbereiteten Website.
 
 ## Technologien & Architektur
 
