@@ -1,4 +1,4 @@
-# VEKTOR
+# VEKTOR Microsite
 
 VEKTOR ist ein fiktives KI-Beratungsunternehmen, das im Rahmen eines **Universitätsprojekts im Bachelorstudium Medieninformatik** konzipiert wurde. Die selbst entwickelte Microsite dient der Präsentation dieses Unternehmens und basiert auf React.js und Tailwind CSS. Der Fokus liegt auf einer dynamischen, modernen und multimedial aufbereiteten Website.
 
