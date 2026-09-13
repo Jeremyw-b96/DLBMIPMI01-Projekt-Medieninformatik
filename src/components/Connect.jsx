@@ -1,34 +1,38 @@
 import MediaItem from "./MediaItem";
 import { motion } from "motion/react";
 import { useRef } from 'react';
+import Interview from "../assets/videos/Interview_Neu.mp4";
+import Podcast from "../assets/videos/Podcast_Neu.mp4";
+import Messe from "../assets/images/Messe.jpg";
 
 const mediaItems = [
   {
     type: "video",
     title: "Gründerinterview",
-    subtitle: "Warum VEKTOR entstanden ist",
-    thumbnail: null,
-    url: "https://www.youtube.com/..."
-  },
-  {
-    type: "audio",
-    title: "Podcast: KI im Mittelstand",
-    subtitle: "20 Minuten Audio-Interview",
-    thumbnail: null,
-    url: "https://www.example.com/podcast"
+    subtitleShort: "Einblick in die Gründungsgeschichte von VEKTOR",
+    subtitle: "Unser Gründer gibt uns Einblicke in die Gründungsgeschichte von VEKTOR.",
+    src: Interview
   },
   {
     type: "image",
-    title: "Bilderserie Digitalmesse Bayern",
-    subtitle: "Einblicke in unsere Projekte",
-    thumbnail: null
+    title: "Digitalmesse Bayern",
+    subtitleShort: "VEKTOR präsentiert live eine KI-gestützte Datenanalyse.",
+    subtitle: "Bei der Digitalmesse Bayern präsentieren wir live eine KI-gestützte Datenanalyse.",
+    src: Messe
+  },
+  {
+    type: "video",
+    title: "Markus Heller zu Gast im IT-Talk",
+    subtitleShort: "Einblick in die Arbeit mit KI",
+    subtitle: "Ein Ausschnitt aus dem IT-Talk Podcast mit unserem CTO",
+    src: Podcast
   },
   {
     type: "paper",
-    title: "Whitepaper: Responsible AI",
-    subtitle: "PDF-Download",
-    thumbnail: null,
-    url: "/papers/responsible-ai.pdf"
+    title: "Impact of Artificial Intelligence on Businesses",
+    subtitleShort: "Einfluss von KI auf Unternehmen",
+    subtitle: "PDF-Version des Papers zu Businnes Impacts of AI",
+    src: "https://arxiv.org/pdf/1905.02092"
   }
 ];
 
@@ -48,9 +52,7 @@ function Connect() {
             Connect
           </h2>
           <p className="sm:text-xl text-vektor-navy/80">
-            Entdecken Sie Interviews, Podcasts, Bilderserien und weiterführende
-            Fachquellen rund um VEKTOR, Künstliche Intelligenz und digitale
-            Transformation.
+            Entdecken Sie Interviews, Podcasts, Bilderserien und weiterführende Fachquellen rund um VEKTOR, Künstliche Intelligenz und digitale Transformation.
           </p>
         </div>
         <motion.div
@@ -66,17 +68,14 @@ function Connect() {
               <MediaItem
                 type={item.type}
                 title={item.title}
+                subtitleShort={item.subtitleShort}
                 subtitle={item.subtitle}
-                thumbnail={item.thumbnail}
-                url={item.url}/>
+                src={item.src}/>
             </div>
           ))}
         </motion.div>
         <div className="mt-10 text-center">
-          <p className="text-sm text-vektor-navy/40">
-            Weitere Inhalte werden fortlaufend ergänzt. Klicken Sie auf eine
-            Kachel, um Details, Videos oder Dokumente zu öffnen.
-          </p>
+          <p className="text-sm text-vektor-navy/40">Weitere Inhalte werden fortlaufend ergänzt. </p>
         </div>
       </div>
     </section>
