@@ -9,7 +9,7 @@ VEKTOR ist ein fiktives KI-Beratungsunternehmen, das im Rahmen eines **Universit
 * **`.map()`:** Dynamische Darstellung von Navigation, Services, Timeline-Elementen und Medien aus Daten-Arrays
 * **Tailwind CSS:** Responsive Layouts, Styling und Breakpoint-Management
 * **`index.css`:** Zentrale CSS-Datei und Einbindung von Tailwind
-* **Motion:**: Animationen und Scroll-basierte Interaktionen mit `motion/react`
+* **Motion:** Animationen und Scroll-basierte Interaktionen mit `motion/react`
 * **React Bits:** Verwendung ausgewählter interaktiver UI- und Animationselemente
 * **Wiederverwendbare Komponenten:** z. B. Service Cards, Timeline Items und Media Items
 
